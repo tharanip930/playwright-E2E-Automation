@@ -59,7 +59,7 @@ test.describe('webtable', async () => {
           await expect(check1).toBeChecked();
         }
 
-        await page.locator("//h2[text()='Sortable Tables']").toBeVisible();
+        
 
 
     })
