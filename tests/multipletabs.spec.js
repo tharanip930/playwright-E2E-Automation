@@ -11,7 +11,7 @@ test.describe("Multiple Windows and Tabs Suite", () => {
   // 3. This runs BEFORE EACH individual test case
   test.beforeEach(async () => {
     // Note: Do NOT add 'const' or 'let' here. Assign directly to the outer variables.
-    browser = await chromium.launch({ headless: false });
+    browser = await chromium.launch({ headless: true });
     context = await browser.newContext();
     page = await context.newPage(); 
     
