@@ -19,7 +19,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run:  npx playwright test webtable.spec.js --project=chromium
+      run:  npx playwright test multipletabs.spec.js  --project=chromium
     - uses: actions/upload-artifact@v5
       if: ${{ !cancelled() }}
       with:

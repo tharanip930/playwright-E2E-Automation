@@ -39,6 +39,10 @@ test.describe("Multiple Windows and Tabs Suite", () => {
     console.log("New tab URL is:", newTab.url());
     
     await newTab.close(); // Close the child tab
+
+    await  page.waitForTimeout(5000);
+
+
   });
 
   test("Handling Multiple Windows", async () => {
@@ -52,6 +56,7 @@ test.describe("Multiple Windows and Tabs Suite", () => {
     console.log("New window URL is:", newWindow.url());
     
     await newWindow.close(); // Close the child window
+    await  page.waitForTimeout(5000);
   });
 
 });
